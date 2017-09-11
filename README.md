@@ -31,7 +31,7 @@ We are going to look for the optimal strategy without using any value functions 
 We restrict ourselves to finding only deterministic policies and parametrize them in a following way:
 
 ```python
-if w_0 * x + w_1 * xdot + w_2 * theta + w_3 * thetadot + b > 0: 
+if w_0 * x + w_1 * xdot + w_2 * theta + w_3 * thetadot > 0: 
   return 1
 else:
   return 0
